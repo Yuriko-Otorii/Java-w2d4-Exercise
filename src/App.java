@@ -35,7 +35,7 @@ public class App {
     
                         double result = c.divide(input1, input2);
                         System.out.printf("%s%.2f%n", "The result is ", result);
-                        
+
                     }else{
                         System.out.println("Bye!");
                         s.close();
@@ -55,11 +55,16 @@ public class App {
             }else if(calc.equals("*")){
                 double result = c.multiply(input1, input2);
                 System.out.printf("%s%.2f%n", "The result is ", result);
+
             }else if(calc.equals("/")){
                 double result = c.divide(input1, input2);
                 System.out.printf("%s%.2f%n", "The result is ", result);
             }
+
+        System.out.println("Do you want to continue or quit?");
+        answer = s.next();
         }
+        
         System.out.println("Bye!");
         s.close();
         System.exit(0);
